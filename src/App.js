@@ -2,9 +2,9 @@ import React from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import "./App.css";
 
-import { HomePage } from "./views/HomePage.tsx";
-import { PodcastDetails } from "./views/PodcastDetails.tsx";
-import { ChapterDetails } from "./views/ChapterDetails.tsx";
+import { HomePage } from "./views/HomePage.jsx";
+import { PodcastDetails } from "./views/PodcastDetails.jsx";
+import { ChapterDetails } from "./views/ChapterDetails.jsx";
 
 class App extends React.Component {
   render() {
@@ -12,8 +12,11 @@ class App extends React.Component {
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<HomePage />} />
-          <Route path="/podcast-details" element={<PodcastDetails />} />
-          <Route path="/chapter-details" element={<ChapterDetails />} />
+          <Route path="/podcast/:podcastId" element={<PodcastDetails />} />
+          <Route
+            path="/podcast/:podcastId/episode/:episodeId"
+            element={<ChapterDetails />}
+          />
         </Routes>
       </BrowserRouter>
     );

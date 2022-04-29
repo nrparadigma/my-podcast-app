@@ -1,0 +1,77 @@
+.box {
+    display: flex;
+}
+
+.episodes {
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    font-weight: bolder;
+    font-size: 1.5rem;
+}
+
+.episodes p {
+    padding: 12px;
+}
+
+.chaptersList {
+    padding: 12px;
+    margin-left: 50px;
+    width: 100%;
+}
+
+.chapter {
+    margin: 0;
+    padding: 0;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.chapterHeader {
+    font-weight: bold;
+    padding: 15px 0;
+}
+
+.chapterItem {
+    display: flex;
+    justify-content: flex-end;
+    margin: 0;
+}
+
+.chapterItem span:first-child{
+    width: 100%;
+    justify-self: flex-start;
+    padding-left: 10px;
+}
+
+.chapterItem span:nth-child(2) {
+    margin-right: 8px;
+    width: 150px;
+}
+
+.chapterItem span:nth-child(3) {
+    width: 150px;
+}
+
+.chapterItem:nth-child(even) {
+    background-color: rgba(207, 207, 207, 0.24);
+}
+
+.chapterTitle {
+    text-decoration: none;
+    justify-self: flex-start;
+    width: 100%;
+    cursor: pointer;
+    color: #5252f5;
+    font-weight: 700;
+}
+
+.chapterTitle p {
+    padding-left: 10px;
+}
+
+.date {
+    margin-right: 8px;
+    width: 150px;
+}
+
+.duration{
+    width: 150px;
+}

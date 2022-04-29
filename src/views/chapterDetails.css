@@ -1,0 +1,31 @@
+.box {
+    display: flex;
+}
+
+.episode-detail {
+    padding: 24px 16px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    margin-left: 50px;
+    height: fit-content;
+    margin-right: 30px;
+}
+
+.episode-detail *{
+    margin: 0;
+    padding: 0;
+}
+
+.title {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.description {
+    font-size: 14px;
+    font-style: italic;
+    margin-bottom: 48px;
+}
+
+.audio {
+    width: 100%;
+}

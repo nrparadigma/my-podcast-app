@@ -1,0 +1,10 @@
+.headerComponent {
+    color: blue;
+    border-bottom: solid rgba(207, 207, 207, 0.24);
+    font-size: 18px;
+    margin-bottom: 24px;
+}
+
+.headerComponent h1 {
+    cursor: pointer;
+}
